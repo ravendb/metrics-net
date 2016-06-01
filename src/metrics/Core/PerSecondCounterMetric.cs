@@ -1,30 +1,20 @@
-﻿using System;
-using System.Collections.Concurrent;
-using System.Collections.Generic;
-using System.Security.Cryptography.X509Certificates;
-using System.Threading;
-using System.Threading.Tasks;
-using metrics.Stats;
-using metrics.Support;
+﻿using metrics.Stats;
 using System.Text;
 using System.Runtime.Serialization;
 
 namespace metrics.Core
 {
-    public class PerSecondCounterMetric : IMetric, IDisposable
+    public class PerSecondCounterMetric : ICounterMetric
     {
         private readonly string _eventType;
         private readonly TimeUnit _rateUnit;
-        private readonly CancellationTokenSource _token = new CancellationTokenSource();
-
-
         private readonly EWMA _ewma = EWMA.OneSecondEWMA();
 
-
-        private void TimeElapsed()
+        public void Tick()
         {
             _ewma.Tick();
         }
+
         public void LogJson(StringBuilder sb)
         {
             sb.Append("{\"count\":").Append(CurrentValue)
@@ -76,24 +66,7 @@ namespace metrics.Core
         public static PerSecondCounterMetric New(string eventType)
         {
             var meter = new PerSecondCounterMetric(eventType, TimeUnit.Seconds);
-
-            var interval = TimeSpan.FromSeconds(1);
-
-            Task.Factory.StartNew(async () =>
-            {
-                while (!meter._token.IsCancellationRequested)
-                {
-                    await Task.Delay(interval, meter._token.Token);
-                    meter.TimeElapsed();
-                }
-            }, meter._token.Token);
-
             return meter;
-        }
-
-        public void Dispose()
-        {
-            _token.Cancel();
         }
     }
 }

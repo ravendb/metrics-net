@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Runtime.Serialization;
 using System.Threading;
-using System.Threading.Tasks;
 using metrics.Stats;
 using metrics.Support;
 using System.Text;
@@ -12,31 +11,18 @@ namespace metrics.Core
     /// A meter metric which measures mean throughput and one-, five-, and fifteen-minute exponentially-weighted moving average throughputs.
     /// </summary>
     /// <see href="http://en.wikipedia.org/wiki/Moving_average#Exponential_moving_average">EMA</see>
-    public class MeterMetric : IMetric, IMetered, IDisposable
+    public class MeterMetric : ICounterMetric, IMetered
     {
         private AtomicLong _count = new AtomicLong();
         private readonly long _startTime = DateTime.Now.Ticks;
-        private static readonly TimeSpan Interval = TimeSpan.FromSeconds(5);
 
         private EWMA _m1Rate = EWMA.OneMinuteEWMA();
         private EWMA _m5Rate = EWMA.FiveMinuteEWMA();
         private EWMA _m15Rate = EWMA.FifteenMinuteEWMA();
-        
-        private readonly CancellationTokenSource _token = new CancellationTokenSource();
 
         public static MeterMetric New(string eventType, TimeUnit rateUnit)
         {
             var meter = new MeterMetric(eventType, rateUnit);
-
-            Task.Factory.StartNew(async () =>
-            {
-                while (!meter._token.IsCancellationRequested)
-                {
-	                await Task.Delay(Interval, meter._token.Token);
-                    meter.Tick();
-                }
-            }, meter._token.Token);
-
             return meter;
         }
 
@@ -58,7 +44,7 @@ namespace metrics.Core
         /// <returns></returns>
         public string EventType { get; private set; }
 
-        private void Tick()
+        public void Tick()
         {
             _m1Rate.Tick();
             _m5Rate.Tick();
@@ -187,11 +173,6 @@ namespace metrics.Core
                                  };
                 return metric;
             }
-        }
-
-        public void Dispose()
-        {
-            _token.Cancel();
         }
     }
 }

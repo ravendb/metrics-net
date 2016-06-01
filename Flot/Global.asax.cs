@@ -30,11 +30,13 @@ namespace Flot
             RegisterGlobalFilters(GlobalFilters.Filters);
             RegisterRoutes(RouteTable.Routes);
 
-            MachineMetrics.InstallPhysicalDisk();
-            MachineMetrics.InstallLogicalDisk();
-            MachineMetrics.InstallCLRLocksAndThreads();
+            var machineMetrics = new MachineMetrics();
+            machineMetrics.InstallPhysicalDisk();
+            machineMetrics.InstallLogicalDisk();
+            machineMetrics.InstallCLRLocksAndThreads();
 
-            Metrics.Gauge(typeof (MvcApplication), "hey_you_guys", () =>
+            var metrics = new Metrics();
+            metrics.Gauge(typeof (MvcApplication), "hey_you_guys", () =>
                                                                        {
                                                                            return 12;
                                                                        });

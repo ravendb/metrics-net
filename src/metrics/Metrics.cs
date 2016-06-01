@@ -170,6 +170,20 @@ namespace metrics
             var justAddedMetric = _metrics.GetOrAdd(metricName, metric);
             return justAddedMetric == null ? metric : (MeterMetric)justAddedMetric;
         }
+
+        /// <summary>
+        /// Remove a meter metric
+        /// </summary>
+        /// <param name="context">The context for this metric</param>
+        /// <param name="name">The metric name</param>
+        /// <returns></returns>
+        public void RemoveMeter(string context, string name)
+        {
+            var metricName = new MetricName(context, name);
+            IMetric existingMetric;
+            _metrics.TryRemove(metricName, out existingMetric);
+        }
+
         /// <summary>
         /// Creates a new timer metric and registers it under the given type and name
         /// </summary>
