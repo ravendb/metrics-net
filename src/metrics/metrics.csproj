@@ -57,6 +57,7 @@
   <ItemGroup>
     <Compile Include="Core\CallbackTimerMetric.cs" />
     <Compile Include="Core\HistogramMetric.cs" />
+    <Compile Include="Core\ICounterMetric.cs" />
     <Compile Include="Core\ManualTimerMetric.cs" />
     <Compile Include="Core\PerSecondCounterMetric.cs" />
     <Compile Include="Core\TimerMetricBase.cs" />
