@@ -3,9 +3,9 @@ using System.IO;
 using System.Net;
 using System.Threading;
 using System.Threading.Tasks;
-using metrics.Util;
+using Raven.Imports.metrics.Util;
 
-namespace metrics.Net
+namespace Raven.Imports.metrics.Net
 {
     public class MetricsListener : IDisposable
     {

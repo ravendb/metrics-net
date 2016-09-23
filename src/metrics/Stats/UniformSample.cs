@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Runtime.Serialization;
 using System.Threading;
-using metrics.Support;
+using Raven.Imports.metrics.Support;
 
-namespace metrics.Stats
+namespace Raven.Imports.metrics.Stats
 {
     /// <summary>
     /// A random sample of a stream of <code>long</code>s. Uses Vitter's Algorithm R to

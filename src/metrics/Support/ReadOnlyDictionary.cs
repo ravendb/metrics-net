@@ -1,8 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using metrics.Core;
+using Raven.Imports.metrics.Core;
 
-namespace metrics.Support
+namespace Raven.Imports.metrics.Support
 {
     /// <summary>
     /// Provides an immutable dictionary

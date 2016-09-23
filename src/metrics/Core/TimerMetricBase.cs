@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace metrics.Core
+namespace Raven.Imports.metrics.Core
 {
    public abstract class TimerMetricBase : IMetric, IMetered
    {

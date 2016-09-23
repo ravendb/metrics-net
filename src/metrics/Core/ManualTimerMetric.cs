@@ -1,6 +1,6 @@
 ﻿using System.Runtime.Serialization;
 
-namespace metrics.Core
+namespace Raven.Imports.metrics.Core
 {
    public class ManualTimerMetric : TimerMetricBase
    {

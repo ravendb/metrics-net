@@ -1,8 +1,8 @@
 ﻿using NUnit.Framework;
-using metrics.Core;
-using metrics.Stats;
+using Raven.Imports.metrics.Core;
+using Raven.Imports.metrics.Stats;
 
-namespace metrics.Tests.Core
+namespace Raven.Imports.metrics.Tests.Core
 {
     [TestFixture]
     public class HistogramMetricTests

@@ -1,9 +1,9 @@
 using System;
 using System.Text;
-using metrics.Core;
-using metrics.Util;
+using Raven.Imports.metrics.Core;
+using Raven.Imports.metrics.Util;
 
-namespace metrics.Reporting
+namespace Raven.Imports.metrics.Reporting
 {
     public class HumanReadableReportFormatter : IReportFormatter
     {

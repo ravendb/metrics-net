@@ -1,8 +1,8 @@
 ﻿using System.Diagnostics;
-using metrics.Support;
 using NUnit.Framework;
+using Raven.Imports.metrics.Support;
 
-namespace metrics.Tests.Support
+namespace Raven.Imports.metrics.Tests.Support
 {
     [TestFixture]
     public class VolatileDoubleTests

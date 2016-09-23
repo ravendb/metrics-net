@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
-using metrics.Core;
+using Raven.Imports.metrics.Core;
 
-namespace metrics.Util
+namespace Raven.Imports.metrics.Util
 {
     internal static class Utils
     {

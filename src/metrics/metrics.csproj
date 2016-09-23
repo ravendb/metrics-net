@@ -8,8 +8,8 @@
     <ProjectGuid>{3FBA902F-4F7E-434D-BE22-89C162B6F92D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>metrics</RootNamespace>
-    <AssemblyName>metrics</AssemblyName>
+    <RootNamespace>Raven.Imports.metrics</RootNamespace>
+    <AssemblyName>raven.metrics</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\..\</SolutionDir>
@@ -33,14 +33,14 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DocumentationFile>..\..\bin\lib\net40\metrics.xml</DocumentationFile>
+    <DocumentationFile>..\..\bin\lib\net40\raven.metrics.xml</DocumentationFile>
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup>
     <SignAssembly>true</SignAssembly>
   </PropertyGroup>
   <PropertyGroup>
-    <AssemblyOriginatorKeyFile>metrics.snk</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>RavenDB.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -104,8 +104,8 @@
     <Compile Include="Util\Utils.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="metrics.snk" />
     <None Include="packages.config" />
+    <None Include="RavenDB.snk" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Net\Static\index.html" />

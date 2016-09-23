@@ -1,6 +1,6 @@
 using System;
 
-namespace metrics
+namespace Raven.Imports.metrics
 {
     /// <summary>
     /// A convenience class for installing global, machine-level metrics

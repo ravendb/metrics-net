@@ -2,11 +2,11 @@
 using System.Diagnostics;
 using System.Linq;
 using System.Text;
-using metrics.Core;
 using NUnit.Framework;
-using metrics.Util;
+using Raven.Imports.metrics.Core;
+using Raven.Imports.metrics.Util;
 
-namespace metrics.Tests.Core
+namespace Raven.Imports.metrics.Tests.Core
 {
     [TestFixture]
     public class CLRProfilerTests

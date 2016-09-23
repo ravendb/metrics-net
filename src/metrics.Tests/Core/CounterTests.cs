@@ -1,6 +1,6 @@
 ﻿using NUnit.Framework;
 
-namespace metrics.Tests.Core
+namespace Raven.Imports.metrics.Tests.Core
 {
     [TestFixture]
     public class CounterTests : MetricTestBase

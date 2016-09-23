@@ -5,9 +5,9 @@ using System.Linq;
 using System.Security;
 using System.Text;
 using System.Threading;
-using metrics.Util;
+using Raven.Imports.metrics.Util;
 
-namespace metrics.Core
+namespace Raven.Imports.metrics.Core
 {
     /// <summary>
     /// A wrapper around available .NET performance counters

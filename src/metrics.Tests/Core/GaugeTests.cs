@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
-using metrics.Core;
 using NUnit.Framework;
+using Raven.Imports.metrics.Core;
 
-namespace metrics.Tests.Core
+namespace Raven.Imports.metrics.Tests.Core
 {
     [TestFixture]
     public class GaugeTests : MetricTestBase

@@ -1,6 +1,6 @@
 ﻿using NUnit.Framework;
 
-namespace metrics.Tests
+namespace Raven.Imports.metrics.Tests
 {
     [TestFixture]
     public class MachineMetricsTests

@@ -1,6 +1,6 @@
 ﻿using System.Threading;
 
-namespace metrics.Support
+namespace Raven.Imports.metrics.Support
 {
     /// <summary>
     /// Provides support for volatile operations around a <see cref="double" /> value

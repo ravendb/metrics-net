@@ -1,8 +1,8 @@
 ﻿using System;
 using NUnit.Framework;
-using metrics.Core;
+using Raven.Imports.metrics.Core;
 
-namespace metrics.Tests.Core
+namespace Raven.Imports.metrics.Tests.Core
 {
     [TestFixture]
     public class SampleExtensionsTests

@@ -8,8 +8,8 @@
     <ProjectGuid>{6DAD9669-E49A-41A2-98F8-D0F4E50CC925}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>metrics.Tests</RootNamespace>
-    <AssemblyName>metrics.Tests</AssemblyName>
+    <RootNamespace>Raven.Imports.metrics.Tests</RootNamespace>
+    <AssemblyName>raven.metrics.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>
     </TargetFrameworkProfile>

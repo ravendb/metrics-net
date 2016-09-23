@@ -2,11 +2,11 @@
 using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Diagnostics;
-using metrics.Core;
-using metrics.Reporting;
-using metrics.Support;
+using Raven.Imports.metrics.Core;
+using Raven.Imports.metrics.Reporting;
+using Raven.Imports.metrics.Support;
 
-namespace metrics
+namespace Raven.Imports.metrics
 {
     /// <summary>
     /// A set of factory methods for creating centrally registered metric instances

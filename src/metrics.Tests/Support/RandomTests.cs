@@ -1,7 +1,8 @@
 ﻿using System.Diagnostics;
 using NUnit.Framework;
+using Raven.Imports.metrics.Support;
 
-namespace metrics.Tests.Support
+namespace Raven.Imports.metrics.Tests.Support
 {
     [TestFixture]
     public class RandomTests
@@ -11,7 +12,7 @@ namespace metrics.Tests.Support
         {
             for(var i = 0; i < 1000; i++)
             {
-                long random = metrics.Support.Random.NextLong();
+                long random = Random.NextLong();
                 Trace.WriteLine(random);
             }
         }

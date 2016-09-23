@@ -2,8 +2,7 @@
 using System.Diagnostics;
 using System.Runtime.Serialization;
 
-
-namespace metrics.Core
+namespace Raven.Imports.metrics.Core
 {
    /// <summary>
     /// A timer metric which aggregates timing durations and provides duration

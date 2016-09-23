@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.Serialization;
 using System.Text;
-using metrics.Stats;
-using metrics.Support;
+using Raven.Imports.metrics.Stats;
+using Raven.Imports.metrics.Support;
 
-namespace metrics.Core
+namespace Raven.Imports.metrics.Core
 {
 	/// <summary>
 	/// A metric which calculates the distribution of a value

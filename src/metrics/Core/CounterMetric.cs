@@ -1,8 +1,8 @@
 ﻿using System.Runtime.Serialization;
 using System.Text;
-using metrics.Support;
+using Raven.Imports.metrics.Support;
 
-namespace metrics.Core
+namespace Raven.Imports.metrics.Core
 {
     /// <summary>
     /// An atomic counter metric

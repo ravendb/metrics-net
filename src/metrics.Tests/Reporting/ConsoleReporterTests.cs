@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Threading;
-using metrics.Reporting;
-using metrics.Tests.Core;
 using NUnit.Framework;
+using Raven.Imports.metrics.Reporting;
+using Raven.Imports.metrics.Tests.Core;
 
-namespace metrics.Tests.Reporting
+namespace Raven.Imports.metrics.Tests.Reporting
 {
     [TestFixture]
     public class ConsoleReporterTests

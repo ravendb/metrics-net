@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Threading;
-using metrics.Support;
+using Raven.Imports.metrics.Support;
 
-namespace metrics.Util
+namespace Raven.Imports.metrics.Util
 {
     /// <summary>
     /// A simple named thread factory, used to track interesting threads (whose traces can be dumped).

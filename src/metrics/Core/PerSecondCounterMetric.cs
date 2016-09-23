@@ -1,8 +1,8 @@
-﻿using metrics.Stats;
+﻿using System.Runtime.Serialization;
 using System.Text;
-using System.Runtime.Serialization;
+using Raven.Imports.metrics.Stats;
 
-namespace metrics.Core
+namespace Raven.Imports.metrics.Core
 {
     public class PerSecondCounterMetric : ICounterMetric
     {
