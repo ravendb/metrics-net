@@ -1,7 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 
-namespace metrics.Core
+namespace Raven.Imports.metrics.Core
 {
     /// <summary>
     /// A hash key for storing metrics associated by the parent class and name pair

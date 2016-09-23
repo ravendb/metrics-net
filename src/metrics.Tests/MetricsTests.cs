@@ -1,8 +1,8 @@
-﻿using metrics.Core;
-using metrics.Tests.Core;
-using NUnit.Framework;
+﻿using NUnit.Framework;
+using Raven.Imports.metrics.Core;
+using Raven.Imports.metrics.Tests.Core;
 
-namespace metrics.Tests
+namespace Raven.Imports.metrics.Tests
 {
     [TestFixture]
     public class MetricsTests

@@ -1,8 +1,8 @@
 ﻿using System;
 using NUnit.Framework;
-using metrics.Stats;
+using Raven.Imports.metrics.Stats;
 
-namespace metrics.Tests.Stats
+namespace Raven.Imports.metrics.Tests.Stats
 {
     [TestFixture]
     public class EWMATests

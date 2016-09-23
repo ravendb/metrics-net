@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace metrics.Stats
+namespace Raven.Imports.metrics.Stats
 {
     internal class DateTimeSupplier : IDateTimeSupplier
     {

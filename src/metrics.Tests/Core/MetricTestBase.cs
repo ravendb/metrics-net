@@ -1,6 +1,4 @@
-using NUnit.Framework;
-
-namespace metrics.Tests.Core
+namespace Raven.Imports.metrics.Tests.Core
 {
     public class MetricTestBase
     {

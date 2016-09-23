@@ -1,7 +1,6 @@
 ﻿using System;
-using System.IO;
 
-namespace metrics.Reporting
+namespace Raven.Imports.metrics.Reporting
 {
     
     public class ConsoleReporter : ReporterBase

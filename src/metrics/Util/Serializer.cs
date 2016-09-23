@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using metrics.Core;
+using Raven.Imports.metrics.Core;
 
-namespace metrics.Util
+namespace Raven.Imports.metrics.Util
 {
     public static class Serializer
     {

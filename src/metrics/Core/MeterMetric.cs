@@ -1,11 +1,10 @@
 ﻿using System;
 using System.Runtime.Serialization;
-using System.Threading;
-using metrics.Stats;
-using metrics.Support;
 using System.Text;
+using Raven.Imports.metrics.Stats;
+using Raven.Imports.metrics.Support;
 
-namespace metrics.Core
+namespace Raven.Imports.metrics.Core
 {
     /// <summary>
     /// A meter metric which measures mean throughput and one-, five-, and fifteen-minute exponentially-weighted moving average throughputs.

@@ -2,7 +2,7 @@
 using System.Security.Cryptography;
 using System.Threading;
 
-namespace metrics.Support
+namespace Raven.Imports.metrics.Support
 {
     /// <summary>
     /// Provides statistically relevant random number generation

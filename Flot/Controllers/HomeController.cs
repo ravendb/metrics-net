@@ -1,6 +1,6 @@
 ﻿using System.Web.Mvc;
-using metrics;
-using metrics.Util;
+using Raven.Imports.metrics;
+using Raven.Imports.metrics.Util;
 
 namespace Flot.Controllers
 {

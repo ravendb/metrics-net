@@ -4,9 +4,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.Serialization;
 using System.Threading;
-using metrics.Support;
+using Raven.Imports.metrics.Support;
 
-namespace metrics.Stats
+namespace Raven.Imports.metrics.Stats
 {
     /// <summary>
     /// An exponentially-decaying random sample of {@code long}s. Uses Cormode et

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace metrics
+namespace Raven.Imports.metrics
 {
     /// <summary>
     /// Provides support for timing values

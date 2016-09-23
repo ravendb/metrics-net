@@ -1,9 +1,8 @@
 ﻿using System;
 using System.Text;
 using System.Threading;
-using metrics.Core;
 
-namespace metrics.Tests
+namespace Raven.Imports.metrics.Tests
 {
     public class Tryout
     {

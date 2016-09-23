@@ -2,7 +2,7 @@
 using System.Collections.Concurrent;
 using System.Collections.Generic;
 
-namespace metrics
+namespace Raven.Imports.metrics
 {
     /// <summary>
     /// A manager class for health checks

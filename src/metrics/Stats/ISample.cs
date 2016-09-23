@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
-using metrics.Core;
+using Raven.Imports.metrics.Core;
 
-namespace metrics.Stats
+namespace Raven.Imports.metrics.Stats
 {
     /// <summary>
     ///  A statistically representative sample of a data stream

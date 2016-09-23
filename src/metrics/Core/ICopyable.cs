@@ -1,7 +1,7 @@
 ﻿using System.Runtime.Serialization;
-using metrics.Support;
+using Raven.Imports.metrics.Support;
 
-namespace metrics.Core
+namespace Raven.Imports.metrics.Core
 {
     /// <summary>
     /// A marker for types that can copy themselves to another type

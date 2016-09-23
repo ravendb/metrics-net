@@ -2,7 +2,7 @@
 using System.Diagnostics;
 using System.Runtime.Serialization;
 
-namespace metrics.Core
+namespace Raven.Imports.metrics.Core
 {
    public class CallbackTimerMetric : TimerMetricBase
    {

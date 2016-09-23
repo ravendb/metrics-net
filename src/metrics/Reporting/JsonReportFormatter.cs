@@ -1,6 +1,6 @@
-using metrics.Util;
+using Raven.Imports.metrics.Util;
 
-namespace metrics.Reporting
+namespace Raven.Imports.metrics.Reporting
 {
     public class JsonReportFormatter : IReportFormatter
     {

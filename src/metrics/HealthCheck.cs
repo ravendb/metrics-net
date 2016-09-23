@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace metrics
+namespace Raven.Imports.metrics
 {
     /// <summary>
     /// A template class for an encapsulated service health check

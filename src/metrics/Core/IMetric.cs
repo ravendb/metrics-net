@@ -1,6 +1,6 @@
 ﻿using System.Text;
 
-namespace metrics.Core
+namespace Raven.Imports.metrics.Core
 {
     public interface IMetric : ICopyable<IMetric>
     {

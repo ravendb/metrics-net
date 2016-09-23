@@ -1,7 +1,7 @@
 ﻿using System;
-using metrics.Support;
+using Raven.Imports.metrics.Support;
 
-namespace metrics.Stats
+namespace Raven.Imports.metrics.Stats
 {
     /// <summary>
     ///  An exponentially-weighted moving average

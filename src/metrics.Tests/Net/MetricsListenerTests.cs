@@ -2,9 +2,9 @@
 using System.IO;
 using System.Net;
 using NUnit.Framework;
-using metrics.Net;
+using Raven.Imports.metrics.Net;
 
-namespace metrics.Tests.Net
+namespace Raven.Imports.metrics.Tests.Net
 {
     [TestFixture]
     public class MetricsListenerTests

@@ -3,7 +3,7 @@ using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace metrics.Stats
+namespace Raven.Imports.metrics.Stats
 {
     /// <summary>
     /// A sample of items from the recent past
